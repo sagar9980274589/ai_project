@@ -1,0 +1,47 @@
+.nav{
+    float:right;
+    
+   height: 3vw;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    position: sticky;
+}
+.logo{
+    width:90%;
+}
+.options{
+    
+    display: flex;
+width:80%;
+
+justify-content: end;
+align-items: center;
+
+
+}
+.btn{
+    width:12vw;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 0.5vw;
+    border: 1px solid black;
+    border-radius: 9%;
+background-color:rgb(229, 227, 227);
+font-family: sans-serif;
+
+}
+.gaccount{
+    margin-left: 0;
+    width:20%;
+    clip-path: circle();
+    background-color: blue;
+    padding: 0.5vw 0;
+    color: white;
+    font-size: 1.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

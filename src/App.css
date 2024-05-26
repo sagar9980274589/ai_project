@@ -1,0 +1,27 @@
+.page{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw;
+  grid-template-rows: 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
+  
+}
+.act{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.nav{
+  grid-column-start: 3;
+  grid-column-end: 10;
+}
+.middle{
+  grid-row-start: 3;
+  grid-row-end: 9;
+}
+.mid{
+  grid-column-start: 3;
+  grid-row-end: 9;
+  grid-row-start: 2;
+}
+ 
