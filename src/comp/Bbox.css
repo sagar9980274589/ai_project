@@ -3,7 +3,29 @@
     height:8vw;
     margin:auto;
     background-color:rgba(240,244,249,255);
- 
+ padding: 2vw;
     border-radius: 25px;
     margin-top: 2vw;
+    font-size: 1.1vw;
+}
+.btn2{
+    font-weight: 600;
+    display: inline-block;
+    color: blue;
+    background-color:rgba(240,244,249,255);
+    font-size: 1.1vw;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 25px;
+}
+.btn2:hover{
+    background-color:#c9e3fd;
+}
+.material-symbols-outlined{
+    font-size: 2vw;
+}
+.info{
+    display: flex;
+    gap:0.5vw;
+
 }
