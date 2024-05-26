@@ -2,14 +2,18 @@
     float:right;
     
    height: 3vw;
-   
+   padding: 1vw 0vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+  
     position: sticky;
 }
 .logo{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    margin-left: 1vw;
     width:90%;
 }
 .options{
@@ -27,14 +31,14 @@ align-items: center;
     text-transform: uppercase;
     background-color: red;
     padding: 0.5vw;
-    border: 1px solid black;
+   border: none;
     border-radius: 9%;
 background-color:rgb(229, 227, 227);
 font-family: sans-serif;
 
 }
 .gaccount{
-    margin-left: 0;
+    margin-right: -25px;
     width:20%;
     clip-path: circle();
     background-color: blue;

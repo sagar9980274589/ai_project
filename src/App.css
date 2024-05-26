@@ -1,7 +1,10 @@
 .page{
   box-sizing: border-box;
+  width:100vw;
+  height: 100vh;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw 11.11vw;
+  grid-template-columns: 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw ;
   grid-template-rows: 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
   
 }
@@ -13,7 +16,7 @@
 }
 .nav{
   grid-column-start: 3;
-  grid-column-end: 10;
+  grid-column-end: 13;
 }
 .middle{
   grid-row-start: 3;
@@ -21,6 +24,7 @@
 }
 .mid{
   grid-column-start: 3;
+  grid-column-end: 13;
   grid-row-end: 9;
   grid-row-start: 2;
 }
