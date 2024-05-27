@@ -5,7 +5,7 @@ const Sboxes = (props) => {
     <div className='Sboxes'>
 <span>{props.des}</span>
 <div className="cir">
-<span class="material-symbols-outlined">
+<span class="pen material-symbols-outlined">
 draw
 </span>
 </div>

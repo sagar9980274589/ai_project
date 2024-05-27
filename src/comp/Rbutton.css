@@ -1,0 +1,22 @@
+.Rbutton{
+width:80%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 25px;
+padding: 0.6em;
+font-size: 0.8em;
+margin: 1em;
+border: none;
+background-color:rgba(240,244,249,255);
+
+}
+#dots{
+    visibility: hidden;
+}
+.Rbutton:hover{
+   #dots{
+    visibility: visible;
+   }
+   background-color:#e9ecf1;
+    }

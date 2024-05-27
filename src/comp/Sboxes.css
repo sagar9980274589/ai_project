@@ -14,7 +14,7 @@
     width:20%;
     clip-path: circle();
     background-color:white;
-    padding: 0.5vw 0;
+    padding: 0.5vw 0.5vw;
     color: black;
     font-size: 1.1vw;
     display: flex;
@@ -28,5 +28,10 @@
     display: inline-block;
     margin: 1vw 0.5vw;
     padding:1vw 0.5vw;
+    
 
+}
+.pen{
+    justify-self: center;
+    margin-left: 1.2vw;
 }
