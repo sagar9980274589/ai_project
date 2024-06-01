@@ -23,7 +23,7 @@ const Middle = () => {
       </div>
       <Bbox/>
     </div>
-    <SearchBox/>
+    <SearchBox />
     </div>
    
     </>

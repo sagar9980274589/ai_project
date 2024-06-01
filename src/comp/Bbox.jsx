@@ -5,7 +5,7 @@ const Bbox = () => {
     <div className="Bbox">
       <div className="war">
         <div className="info">
-        <span class="material-symbols-outlined">privacy_tip</span>
+        <span className="material-symbols-outlined">privacy_tip</span>
         Your conversations are processed by human reviewers to improve the
         technologies powering Gemini Apps. Don’t enter anything you wouldn’t
         want reviewed or used.

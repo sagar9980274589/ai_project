@@ -8,7 +8,8 @@ import Middle from './comp/Middle'
 
 function App() {
 
-
+ 
+  
   return (
     <>
   <div className='page'>
