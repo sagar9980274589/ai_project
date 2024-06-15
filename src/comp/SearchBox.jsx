@@ -3,21 +3,18 @@ import "./SearchBox.css";
 
 const SearchBox = () => {
   const inputRef = useRef("");
-  const [data, setData] = useState({});
+  const [data, setData] = useState({ name: "sagar" });
   const leftChatObj = [{}];
 
   function handleInput() {
     const inputValue = inputRef.current.value;
+    leftChatObj.push({ name: "shaiva" });
     leftChatObj.push({ name: inputValue });
     setData(leftChatObj);
   }
-
-
-  
-
+  console.log(data);
   return (
     <>
-      
       <div className="SearchBox">
         <div className="me">
           <input
@@ -28,15 +25,14 @@ const SearchBox = () => {
             className="SearchBoxi"
           />
           <div>
-          <span onClick={handleInput} className="material-symbols-outlined">
-send
-</span>
-            <span className="material-symbols-outlined">add_a_photo</span>
-            <span  className="material-symbols-outlined">
-              mic
+            <span onClick={handleInput} className="material-symbols-outlined">
+              send
             </span>
+            <span className="material-symbols-outlined">add_a_photo</span>
+            <span className="material-symbols-outlined">mic</span>
           </div>
         </div>
+       
       </div>
     </>
   );

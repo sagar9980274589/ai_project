@@ -42,3 +42,13 @@
     }
     background-color:#e9ecf1;
 }
+.display{
+    width:30vw;
+    height:10vw;
+    border: 2px solid black;
+    font-size: 8vw;
+    color: black;
+}
+.display li{
+    
+}

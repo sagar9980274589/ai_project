@@ -41,3 +41,12 @@ padding: 1vw;
     background-color:#e9ecf1;
 }
 
+
+.bgwhite{
+background-color:white;
+color:rgb(58, 58, 58);
+}
+.bgblack{
+    background-color: rgb(58, 58, 58);
+    color:white
+}

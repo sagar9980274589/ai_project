@@ -18,3 +18,47 @@
   background:grey ;
   border-radius: 10px;
 }
+
+.bgwhite{
+  background-color:white;
+  color:rgb(58, 58, 58);
+  }
+  .bgblack{
+      background-color: rgb(58, 58, 58);
+      color:white
+  }
+  .mode{
+    display: flex;
+    gap: 14.4px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+    background-color: rgb(58, 58, 58);
+    transition: all 1.5s;
+}
+#m1{
+    font-size: 26px;
+    margin-right: 0px;
+    color: white;
+}
+#m2{
+    font-size: 26px;
+    margin-right: 0px;
+    color: white;
+}
+.scroll{
+    width:25px;
+    height: 25px;
+    position: absolute;
+    top: 0.1px;
+    left: 2.1px;
+    clip-path: circle();
+    background-color:white;
+    transition: transform 1s;
+    transition: background-color color 2s;
+    color: white;
+    
+
+}
