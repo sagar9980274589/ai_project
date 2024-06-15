@@ -2,7 +2,7 @@
     width:13vw;
     height:13vw;
     background-color:#f2f5f8;
-
+color: black;
     border-radius: 13%;
     position: relative;
 }
@@ -34,4 +34,21 @@
 .pen{
     justify-self: center;
     margin-left: 1.2vw;
+}
+@media only screen and (max-width: 735px) {
+
+    .Sboxes{
+        width: 20vw;
+        height: 20vw;
+
+}
+.cir{
+    padding: 1.5vw;
+    .material-symbols-outlined{
+        font-size: 2.5em;
+        margin: 0px;
+    }
+}
+
+
 }

@@ -7,7 +7,7 @@ import Act from './comp/Act'
 import Middle from './comp/Middle'
 
 function App() {
-  const [flag,setflag]=useState(1);
+  const [flag,setflag]=useState(0);
   function toggle(){
    
     setflag(!flag);
@@ -23,7 +23,7 @@ function App() {
     m2.style.color='rgb(58, 58, 58)';
     tgl.style.backgroundColor='rgb(58, 58, 58)';
     tgl.style.color='rgb(58, 58, 58)';
-    
+    mode.style.border='1px solid black';
     
    
     }
@@ -35,7 +35,7 @@ function App() {
       m2.style.color='white';
       tgl.style.backgroundColor='white';
       tgl.style.color='white';
-      
+      mode.style.border='1px solid white';
     }
   }
 

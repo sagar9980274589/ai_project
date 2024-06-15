@@ -25,11 +25,11 @@ const SearchBox = () => {
             className="SearchBoxi"
           />
           <div>
-            <span onClick={handleInput} className="material-symbols-outlined">
+            <span onClick={handleInput} className="material-symbols-outlined ics">
               send
             </span>
-            <span className="material-symbols-outlined">add_a_photo</span>
-            <span className="material-symbols-outlined">mic</span>
+            <span className="material-symbols-outlined ics">add_a_photo</span>
+            <span className="material-symbols-outlined ics">mic</span>
           </div>
         </div>
        

@@ -1,6 +1,10 @@
 *{
   margin: 0;
   padding: 0;
+
+}
+body{
+  transition: background-color 5000ms linear
 }
 /* width */
 ::-webkit-scrollbar {

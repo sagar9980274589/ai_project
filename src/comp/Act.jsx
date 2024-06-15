@@ -3,15 +3,20 @@ import "./Act.css";
 import Rbutton from "./Rbutton";
 
 const Act = (props) => {
-  
-const dark=props.dvalue;
- 
+  const dark = props.dvalue;
+// const isActDisabled=window.matchMedia('(max-width:420px)').matches;
+
+//  const actClass=isActDisabled?'disable-act':'';
   
   
 
-  
+  // if(isActDisabled)
+  //   {
+  //     return null;
+  //   }
+
   return (
-    
+    <>
     <div  className={dark==true?"act bgblack":"act bgwhite"}>
       <div className="up1">
         <span className="lst material-symbols-outlined">lists</span>
@@ -50,6 +55,7 @@ const dark=props.dvalue;
         />
       </div>
     </div>
+    </>
   );
 
 };
