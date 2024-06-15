@@ -2,7 +2,8 @@
   box-sizing: border-box;
   width:100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw ;
   grid-template-rows: 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
@@ -136,9 +137,10 @@ font-size: 0.8em;
   .btn{
     width:22vw;
   }
-  
-  
-
+  .logo{
+    font-size: 13px;
+    gap: 5vw;
+  }
   
   
   }
