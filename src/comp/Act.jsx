@@ -2,22 +2,13 @@ import React,{useRef, useState} from "react";
 import "./Act.css";
 import Rbutton from "./Rbutton";
 
-const Act = (props) => {
+const Act = ({data,...props}) => {
   const dark = props.dvalue;
-// const isActDisabled=window.matchMedia('(max-width:420px)').matches;
 
-//  const actClass=isActDisabled?'disable-act':'';
-  
-  
-
-  // if(isActDisabled)
-  //   {
-  //     return null;
-  //   }
 
   return (
     <>
-    <div  className={dark==true?"act bgblack":"act bgwhite"}>
+    <div  className={dark==false?"act bgblack1":"act "}>
       <div className="up1">
         <span className="lst material-symbols-outlined">lists</span>
    
@@ -28,7 +19,7 @@ const Act = (props) => {
       <div className="mid1">
         Recent
         <Rbutton 
-          rchat="how to do ..."
+          rchat={data}
           logo={<span className="material-symbols-outlined">chat_bubble</span>}
         />
         <Rbutton

@@ -3,13 +3,13 @@ import "./Middle.css";
 import Sboxes from "./Sboxes";
 import Bbox from "./Bbox";
 import SearchBox from "./SearchBox";
-const Middle = (props) => {
+const Middle = ({inpref,handletext,...props}) => {
   const [name, uname] = useState("Sagar");
   const dark = props.dvalue;
 
   return (
     <>
-      <div className={dark == true ? "mid bgblack" : "mid bgwhite"}>
+      <div className={dark == false ? "mid bgblack" : "mid bgwhite"}>
         <div className="midup">
           <div className="hci">
             <div className="name">Hello,{name}</div>
@@ -25,7 +25,7 @@ const Middle = (props) => {
           <Bbox />
         </div>
         <div className="mid_down">
-        <SearchBox />
+        <SearchBox inpref={inpref} fun={handletext} />
         </div>
       </div>
     </>
