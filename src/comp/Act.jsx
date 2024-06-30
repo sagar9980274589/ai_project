@@ -18,16 +18,17 @@ const Act = ({data,...props}) => {
       </div>
       <div className="mid1">
         Recent
+       
         <Rbutton 
-          rchat={data}
+          rchat={data[0]}
           logo={<span className="material-symbols-outlined">chat_bubble</span>}
         />
         <Rbutton
-          rchat="how to do ..."
+          rchat={data[1]}
           logo={<span className="material-symbols-outlined">chat_bubble</span>}
         />
         <Rbutton
-          rchat="how to do ..."
+          rchat={data[2]}
           logo={<span className="material-symbols-outlined">chat_bubble</span>}
         />
       </div>

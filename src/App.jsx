@@ -5,20 +5,32 @@ import "./App.css";
 
 import Act from "./comp/Act";
 import Middle from "./comp/Middle";
+let idx=0;
+const leftChatObj = ["","",""];
 
 function App() {
   const inputRef = useRef("");
-  const [data, setData] = useState([""]);
-  const leftChatObj = [""];
+  const [data, setData] = useState(["","",""]);
 
+  
 function handletext(){
+ 
+  if(idx==3)
+    {
+      idx=0;
+    }
   const inputValue = inputRef.current.value;
-  leftChatObj.push( inputValue );
+ 
+  leftChatObj[idx]= inputValue ;
+  idx=idx+1;
   setData(leftChatObj);
-      
-
+ 
+ 
+ 
+  
 }
  console.log(data);
+
 
 
 const tgl=useRef();
