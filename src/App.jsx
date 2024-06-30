@@ -5,29 +5,33 @@ import "./App.css";
 
 import Act from "./comp/Act";
 import Middle from "./comp/Middle";
-let idx=0;
-const leftChatObj = ["","",""];
+
+  
+// const leftChatObj = ["","",""];
 
 function App() {
   const inputRef = useRef("");
-  const [data, setData] = useState(["","",""]);
-
-  
+  const [data, setData] = useState([[""]]);
+  const[idx,setidx]=useState(1);
 function handletext(){
- 
-  if(idx==3)
-    {
-      idx=0;
-    }
+  
+
+console.log(idx);
+
   const inputValue = inputRef.current.value;
  
-  leftChatObj[idx]= inputValue ;
-  idx=idx+1;
-  setData(leftChatObj);
- 
- 
- 
+  // leftChatObj.push={inputValue} ;
   
+
+  setData(prev=>({...prev,...prev[idx]=[`${inputValue}`]}));
+
+  setidx(idx+1);
+  if(idx==4)
+    {
+    setidx(2);
+   
+    }
+
 }
  console.log(data);
 
