@@ -2,6 +2,7 @@ import { useState,useRef } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Sact from "./comp/Sact"
 
 import Act from "./comp/Act";
 import Middle from "./comp/Middle";
@@ -11,12 +12,23 @@ import Middle from "./comp/Middle";
 
 function App() {
   const inputRef = useRef("");
+  const actref = useRef("");
   const [data, setData] = useState([[""]]);
+  
   const[idx,setidx]=useState(1);
+  function drop(){
+    
+ 
+    
+    actref.current.style.zIndex = 9;
+    
+    }
 function handletext(){
   
 
 console.log(idx);
+
+
 
   const inputValue = inputRef.current.value;
  
@@ -33,7 +45,7 @@ console.log(idx);
     }
 
 }
- console.log(data);
+
 
 
 
@@ -82,8 +94,13 @@ const m2=useRef();
     
       <div className="page">
         <div className={flag == false ? "nav bgblack" : "nav bgwhite"}>
+        <span onClick={drop} className="material-symbols-outlined menu">
+menu
+</span>
           <div className="logo">
-            <span>COMPANY_NAME</span>
+            <span className="logo1">THINK AI<span className="material-symbols-outlined">
+smart_toy
+</span></span>
             <div ref={mode}onClick={toggle} className="mode">
               <div ref={tgl}className="scroll">.</div>
               <span ref={m1}id="m1" className="  material-symbols-outlined">
@@ -102,8 +119,9 @@ const m2=useRef();
           </div>
         </div>
 
-        {/* <Nav className="nav" dvalue={dvalue}/> */}
-        <Act className="act" data={data} dvalue={flag} />
+       
+      
+        <Act  actref={actref} className="act " data={data} dvalue={flag} />
         <Middle className="middle" inpref={inputRef} handletext={handletext} dvalue={flag} />
       </div>
     </>

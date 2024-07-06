@@ -71,3 +71,15 @@ body{
     
 
 }
+.dis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ margin-top: 1vw;
+}
+@media only screen and (max-width: 735px) {
+.act{
+  display: flex;
+}
+}

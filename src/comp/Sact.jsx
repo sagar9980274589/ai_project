@@ -1,18 +1,16 @@
 import React,{useRef, useState} from "react";
-import "./Act.css";
+import "./Sact.css";
 import Rbutton from "./Rbutton";
 
-const Act = ({actref,data,...props}) => {
+const Sact = ({actref,data,...props}) => {
   const dark = props.dvalue;
-function back(){
-  actref.current.style.zIndex = -1;
-}
+
 
   return (
     <>
     <div ref={actref}  className={dark==false?"act  bgblack1":"act  "}>
       <div className="up1">
-        <span onClick={back}className="lst material-symbols-outlined">lists</span>
+        <span className="lst material-symbols-outlined">lists</span>
    
         <button  className="NC">
           <span className="material-symbols-outlined">add</span> New chat
@@ -60,4 +58,4 @@ function back(){
 
 };
 
-export default Act;
+export default Sact;
