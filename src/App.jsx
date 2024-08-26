@@ -1,4 +1,4 @@
-import { useState,useRef } from "react";
+import { useState,useRef, useContext } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -6,16 +6,21 @@ import Sact from "./comp/Sact"
 
 import Act from "./comp/Act";
 import Middle from "./comp/Middle";
+import { Context } from "./context";
 
   
-// const leftChatObj = ["","",""];
+
 
 function App() {
+  const{onSent,showResult,recentPrompt, loading,resultData,setInput,input}=useContext(Context);
   const inputRef = useRef("");
   const actref = useRef("");
-  const [data, setData] = useState([[""]]);
   
-  const[idx,setidx]=useState(1);
+  const [currentval, setcurrentval] = useState("");
+  const [recentval, setrecentval] = useState("");
+  const [prevval, setprevval] = useState([]);
+  
+
   function drop(){
     
  
@@ -23,29 +28,47 @@ function App() {
     actref.current.style.zIndex = 9;
     
     }
-function handletext(){
+
+
+
+// function handletext(){
   
 
-console.log(idx);
 
 
 
-  const inputValue = inputRef.current.value;
+
+//   const inputValue = inputRef.current.value;
  
-  // leftChatObj.push={inputValue} ;
+//   // leftChatObj.push={inputValue} ;
   
 
-  setData(prev=>({...prev,...prev[idx]=[`${inputValue}`]}));
+//   // setData(prev=>({...prev,...prev[idx]=[`${inputValue}`]}));
 
-  setidx(idx+1);
-  if(idx==4)
-    {
-    setidx(2);
+//   // setidx(idx+1);
+//   // if(idx==4)
+//   //   {
+//   //   setidx(2);
    
-    }
+//   //   }
 
-}
+//   setcurrentval(inputValue);
+//   setprevval((p)=>{return [...p,inputValue]})
+  
+  
+//     setrecentval(inputValue); 
+//   if(prevval.length>0)
+//   {
+//     let idx=eval(prevval.length-1);
+   
+//     setrecentval(prevval[idx]); 
+//   }
+  
+ 
 
+  
+
+// }
 
 
 
@@ -121,8 +144,8 @@ smart_toy
 
        
       
-        <Act  actref={actref} className="act " data={data} dvalue={flag} />
-        <Middle className="middle" inpref={inputRef} handletext={handletext} dvalue={flag} />
+        <Act  actref={actref} currentval={currentval} recentval={recentval} prevval={prevval} className="act "  dvalue={flag} />
+        <Middle className="middle"  inpref={inputRef}  dvalue={flag} />
       </div>
     </>
   );

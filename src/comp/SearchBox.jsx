@@ -1,9 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import "./SearchBox.css";
+import { Context } from "../context";
 
-const SearchBox = ({ fun,inpref }) => {
+const SearchBox = ({ inpref }) => {
  
-  
+  const{onSent,showResult,recentPrompt, loading,resultData,setInput,input}=useContext(Context);
 
  
 
@@ -12,15 +13,17 @@ const SearchBox = ({ fun,inpref }) => {
       <div className="SearchBox">
         <div className="me">
           <input
+          onChange={(e)=>setInput(e.target.value)}
+          value={input}
             ref={inpref}
             type="search"
             name="prompt"
             placeholder="type here... "
             className="SearchBoxi"
           />
-          <div>
+          <div className="icons">
             <span
-              onClick={fun}
+             onClick={()=>onSent()}
               className="material-symbols-outlined ics"
             >
               send

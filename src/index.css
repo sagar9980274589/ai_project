@@ -81,5 +81,6 @@ body{
 @media only screen and (max-width: 735px) {
 .act{
   display: flex;
+  width:250px;
 }
 }

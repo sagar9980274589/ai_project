@@ -1,6 +1,6 @@
 .act{
     box-sizing: border-box;
-  
+  height: 100vh;
     background-color:#f2f5f8;
     display: flex;
     flex-direction: column;
@@ -8,11 +8,11 @@
     
 }
 .up1{
-height: 20%;
-
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 .mid1{
 height: 60%;
@@ -24,7 +24,7 @@ padding: 1em;
 }
 .lst{
 
-padding: 6vw;
+
 
 }
 .NC{

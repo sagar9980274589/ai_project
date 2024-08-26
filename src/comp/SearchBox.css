@@ -1,8 +1,11 @@
 
 .SearchBox{
-    margin-top: 0.5em;
-    width: 100%;
+    margin-top: 0.7em;
+    width: 80%;
     display: flex;
+   
+    position: absolute;
+    top: 83vh;
     justify-content: center;
     align-items: center;
 }
@@ -30,6 +33,9 @@
 .SearchBoxi:focus{
    
   outline: none;
+}
+.icons{
+    display: flex;
 }
 .material-symbols-outlined{
     font-size: 1.6em;
@@ -62,5 +68,8 @@
 .ics{
     font-size: 5vw;
     margin: 1.1vw;
+}
+.SearchBox{
+    width: 98%;
 }
 }
